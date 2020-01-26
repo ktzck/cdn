@@ -20,7 +20,7 @@ function toggleClass(selector, classname) {
 // DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function() {
   const toggleClassElements = document.querySelectorAll('[data-toggle-class]')
-  for (let i = 0; let < toggleClassElements.length; i++) {
+  for (let i = 0; i < toggleClassElements.length; i++) {
     const el = toggleClassElements[i]
     const classname = el.getAttribute('data-toggle-class')
     el.addEventListener('click', function() {
