@@ -16,3 +16,19 @@ function toggleClass(selector, classname) {
     })
   }
 }
+
+// DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleClassElements = document.querySelectorAll('[data-toggle-class]')
+  for (let i = 0; let < toggleClassElements.length; i++) {
+    const el = toggleClassElements[i]
+    const classname = el.getAttribute('data-toggle-class')
+    el.addEventListener('click', function() {
+      if (el.classList.contains(classname)) {
+        el.classList.remove(classname)
+      } else {
+        el.classList.add(classname)
+      }
+    })
+  }
+})
